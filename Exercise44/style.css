@@ -1,0 +1,23 @@
+DIV.Article {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 2px;
+    background-color: green;
+    width: 250px;
+    float: right;
+    font-weight: bold;
+}
+ADDRESS {
+    font-size: 0.9em;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.1em;
+    font: sans-serif;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}

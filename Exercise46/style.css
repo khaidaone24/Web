@@ -1,0 +1,73 @@
+/* CSS PROVIDED BY USER */
+DIV.Article {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(7, 173, 85); /* Màu xanh lá cây */
+    width: 250px;
+    float: right;
+    font-weight: bold;
+}
+DIV.Heading {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(247, 211, 8); 
+    float: right;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-size: 1.1em;
+    font-family: sans-serif; 
+}
+.Special {
+    color: rgb(128, 1, 113); 
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffaf0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #000; 
+    background-color: rgb(237, 157, 44);
+    padding: 10px;
+}
+.main-header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.weather-banner {
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.main-content {
+    overflow: hidden; 
+}
+.left-column {
+    width: calc(100% - 270px);
+    float: left;
+}
+.section-title {
+    color: rgb(147, 6, 133);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.float-image {
+    float: right;
+    margin: 0 0 10px 15px; 
+}

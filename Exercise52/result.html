@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      color: #333;
+    }
+
+    h2 {
+      color: #9b1452;
+    }
+
+    .data {
+      margin-top: 20px;
+    }
+
+    .data p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Message Sent Successfully</h2>
+  <div class="data">
+    <p><strong>Full name:</strong> <script>document.write(decodeURIComponent(location.search.match(/fullname=([^&]*)/)?.[1] || ""));</script></p>
+    <p><strong>Email:</strong> <script>document.write(decodeURIComponent(location.search.match(/email=([^&]*)/)?.[1] || ""));</script></p>
+    <p><strong>Send to:</strong> <script>document.write(decodeURIComponent(location.search.match(/sendto=([^&]*)/)?.[1] || ""));</script></p>
+    <p><strong>Title:</strong> <script>document.write(decodeURIComponent(location.search.match(/title=([^&]*)/)?.[1] || ""));</script></p>
+    <p><strong>Content:</strong> <script>document.write(decodeURIComponent(location.search.match(/content=([^&]*)/)?.[1] || ""));</script></p>
+  </div>
+</body>
+</html>

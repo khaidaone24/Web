@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Newborn Registration - Đào Thế Khải</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #026a71;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 30px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px auto; /* căn giữa + khoảng cách dưới */
+      max-width: 100%;
+      height: auto;
+    }
+
+    form {
+      background-color: #026a71;
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 20px 40px;
+      width: 600px;
+      display: table;
+    }
+
+    .form-row {
+      display: table-row;
+    }
+
+    .form-label {
+      display: table-cell;
+      padding: 5px 10px 5px 0;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: middle;
+      font-size: 0.9em;
+    }
+
+    .form-input {
+      display: table-cell;
+      padding: 5px 0;
+      vertical-align: middle;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      color: black;
+      background-color: white;
+    }
+
+    select {
+      width: 200px;
+      height: 70px;
+    }
+
+    .inline-names {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .inline-names label {
+      color: white;
+      font-size: 0.85em;
+    }
+
+    .inline-names input {
+      width: 100px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 5px 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #f3f3f3;
+    }
+
+    button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <img src="Logo.gif" alt="Hospital Logo">
+
+  <form>
+    <div class="form-row">
+      <div class="form-label">Date:</div>
+      <div class="form-input"><input type="date"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">1) Infant's first name:</div>
+      <div class="form-input inline-names">
+        <input type="text" placeholder="First">
+        <label>Last:</label>
+        <input type="text" placeholder="Last">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">2) Medical Record #:</div>
+      <div class="form-input"><input type="text"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">3) Date of birth:</div>
+      <div class="form-input"><input type="date"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">4) Birth weight:</div>
+      <div class="form-input"><input type="text"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">5) APGAR score:</div>
+      <div class="form-input"><input type="text"></div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">6) Mother's first name:</div>
+      <div class="form-input inline-names">
+        <input type="text" placeholder="First">
+        <label>Last:</label>
+        <input type="text" placeholder="Last">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">7) Father's first name:</div>
+      <div class="form-input inline-names">
+        <input type="text" placeholder="First">
+        <label>Last:</label>
+        <input type="text" placeholder="Last">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-label">8) Physician (check all that apply):</div>
+      <div class="form-input">
+        <select multiple>
+          <option>Dr. Warren Albert</option>
+          <option>Dr. Maria Alvarez</option>
+          <option>Dr. Karen Brinkman</option>
+          <option>Dr. Micheal Kerry</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="submit">Register</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chuẩn hóa tên</title>
+<script>
+function Process_Optimization() {
+    let str = document.forms["my_form"].name_input.value;
+    str = str.trim();
+    str = str.replace(/\s+/g, ' '); 
+    str = str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+    document.getElementById("name_output").innerText = str;
+}
+</script>
+</head>
+<body>
+<form name="my_form">
+    <table>
+        <tr>
+            <td>Input:</td>
+            <td><input type="text" name="name_input" oninput="Process_Optimization()"></td>
+        </tr>
+        <tr>
+            <td>Output:</td>
+            <td id="name_output"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

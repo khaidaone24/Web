@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiêu đề trang</title>
+    <script>
+        function create_p_tag() {
+            my_div= document.getElementById("my_div");
+            p_tag = document.createElement("p");
+            p_tag.innerText = new Date().toLocaleTimeString();
+            my_div.appendChild(p_tag);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="create_p_tag()">Click Me</button>
+    <div id="my_div">
+
+    </div>
+    <script type="text/javascript">
+        setInterval(create_p_tag,1000);
+    </script>
+</body>
+</html>
